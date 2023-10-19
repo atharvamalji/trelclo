@@ -1,0 +1,13 @@
+{
+    "name": "@trelclo/utils",
+    "version": "1.0.0",
+    "description": "core utilities for trello clone.",
+    "main": "index.js",
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run buil:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJs --outDir dist/cjs"
+    },
+    "author": "Atharva Malji",
+    "license": "UNLICENSED"
+}
